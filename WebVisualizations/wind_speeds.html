@@ -2,51 +2,83 @@
 <html lang="en-us">
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-    <body>
-    <div class="bs-example">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="../main.html" class="navbar-brand">Latitude vs. Weather</a>
-            <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plots</a>
-                        <div class="dropdown-menu">
-                            <a href="../WebVisualizations/max_temperature.html" class="dropdown-item">Temperature</a>
-                            <a href="../WebVisualizations/humidity.html" class="dropdown-item">Humidity</a>
-                            <a href="../WebVisualizations/cloudiness.html" class="dropdown-item">Cloudiness</a>
-                            <a href="../WebVisualizations/wind_speeds.html"class="dropdown-item">Wind speed</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Comparisons</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Dataset</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    </body>
 
+<body>
+  <div class="bs-example">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <a href="../main.html" class="navbar-brand">Latitude vs. Weather</a>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plots</a>
+                      <div class="dropdown-menu">
+                          <a href="../WebVisualizations/max_temperature.html" class="dropdown-item">Temperature</a>
+                          <a href="../WebVisualizations/humidity.html" class="dropdown-item">Humidity</a>
+                          <a href="../WebVisualizations/cloudiness.html" class="dropdown-item">Cloudiness</a>
+                          <a href="../WebVisualizations/wind_speeds.html"class="dropdown-item">Wind speed</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../WebVisualizations/comparisons.html">Comparisons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../WebVisualizations/data.html">Dataset</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </div>
+</body>
 
-
-
-
-<h1>Wind Speeds</h1>
-<img src="Resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speeds" width="40%">
 
 <br>
-<body>
-    We see an even distribution of varying wind speeds across all latitudes.
-    <br>
-    Generally, wind speeds are found between 0 to 10mph.
-    <br>
-    We do see a few latitudes in the northern hemisphere with higher wind speeds, but not enough to draw a definite correlation between the two. 
-</body>
+<div class="container">
+    <!-- First row -->
+    <div class="row">
+        <!-- First column in row -->
+        <div class="col col-12 col-md-7 divbody">
+            <br>
+            <h2>Wind Speed</h2>
+            <div class="text-center">
+                <hr>
+                <p><img src="../WebVisualizations/Resources/assets/images/Fig4.png" width="90%" alt="City Latitude vs. Wind Speed"></p>
+                <p>We see an even distribution of varying wind speeds across all latitudes.</p>
+                <p>Generally, wind speeds are found between 0 to 10mph.</p>
+                <p>We do see a few latitudes in the northern hemisphere with higher wind speeds, but not enough to draw a definite correlation between the two.</p>
+            </div>
+        </div>
+  
+        <!-- Second column in row -->
+        <div class="col col-12 col-md-5 divbody">
+          <br>
+          <h2>Visualizations</h2>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="../WebVisualizations/max_temperature.html"><img src="../WebVisualizations/Resources/assets/images/Fig1.png" width="100%"></a>
+            </div>        
+            <div class="col-md-6">
+              <a href="../WebVisualizations/humidity.html"><img src="../WebVisualizations/Resources/assets/images/Fig2.png" width=100%"></a>
+            </div> 
+          </div>   
+          <br>
+          <br>
+          <div class="row">    
+            <div class="col-md-6">
+              <a href="../WebVisualizations/cloudiness.html"><img src="../WebVisualizations/Resources/assets/images/Fig3.png" width="100%"></a>
+            </div>        
+            <div class="col-md-6 imgborder">
+              <a href="../WebVisualizations/wind_speeds.html"><img src="../WebVisualizations/Resources/assets/images/Fig4.png" width="100%"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>  
+</html>
