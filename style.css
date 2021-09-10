@@ -12,11 +12,23 @@ body {
     height: 100%;
     padding: 20px;
     color: rgb(0, 0, 0);
-    background: lightgray;
+    background: white;
 }
   
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkslategray;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: darkslategray;
+}
+
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
     color: darkslategray;
 }
 
@@ -26,4 +38,18 @@ h2 {
 
 .imgborder {
     border: 3px solid darkslategray;
+}
+
+/* Extra small screens */
+@media (max-width: 575.98px) {
+    .history {
+        display: block;
+      }
+}
+
+/* Small screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .history {
+        display: block;
+      }
 }
